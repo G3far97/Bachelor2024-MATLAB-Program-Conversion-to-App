@@ -1,0 +1,34 @@
+
+% This LaTeX was auto-generated from MATLAB code.
+% To make changes, update the MATLAB code and republish this document.
+
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
+
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+    
+    \begin{verbatim}
+function main_entry_point
+
+    % Load pre-captured image
+    imageData = coder.load('img.mat');
+
+    % Convert image data to double
+    imageData = double(imageData.img);
+
+    % Call lung_trainer_game function with pre-captured image data
+    Lungentrainer02(imageData);
+
+end
+\end{verbatim}
+
+
+
+\end{document}
+

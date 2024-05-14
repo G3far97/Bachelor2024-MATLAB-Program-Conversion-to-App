@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "LungenTrainer web server",
+  "main": "index.js",
+  "scripts": {
+    "test": "run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G3far97/LungenTrainer_2.git"
+  },
+  "author": "Ahmed Gaafar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G3far97/LungenTrainer_2/issues"
+  },
+  "homepage": "https://github.com/G3far97/LungenTrainer_2#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
