@@ -7,7 +7,7 @@ app.use(express.static('./Lungentrainer_2'));
 
 // If you have an index.html file, you can set up a route like this:
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/Lungentrainer_2/PackagingLog.html');
+  res.sendFile(__dirname + '/Lungentrainer_2/index.html');
 });
 
 // Start the server

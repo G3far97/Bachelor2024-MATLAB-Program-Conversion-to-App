@@ -3,15 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LungenTrainer App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Lung Trainer App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app-container">
-        <!-- Your MATLAB app UI components will be rendered here -->
-
-        
-
+    <div class="container">
+        <div class="header">
+            <h1 class="app-name">Lung Trainer</h1>
+            <div class="dropdowns">
+                <select id="rounds">
+                    <option value="1">1 Round</option>
+                    <option value="2">2 Rounds</option>
+                    <option value="3">3 Rounds</option>
+                </select>
+                <select id="time">
+                    <option value="3">3 Seconds</option>
+                    <option value="5">5 Seconds</option>
+                    <option value="10">10 Seconds</option>
+                </select>
+            </div>
+        </div>
+        <div class="camera-container">
+            <video id="video" autoplay></video>
+        </div>
+        <div class="user-input">
+            <label for="users">Users</label>
+            <select id="users">
+                <option value="User1">User1</option>
+                <option value="User2">User2</option>
+            </select>
+            <input type="text" id="newUser" placeholder="AdName" />
+            <button id="addUser">Add User</button>
+        </div>
+        <div class="start-button">
+            <button id="start">Start</button>
+            <div id="countdown"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
